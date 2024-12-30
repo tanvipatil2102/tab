@@ -1,0 +1,84 @@
+<div class="row">
+    <div class="col-md-6 offset-md-3 mt-4">
+        <ul class="nav nav-pills">
+            <li class="nav-item"
+            (click)="selectedSkill = 'html'"
+            >
+                <a href="javascript:;" class="nav-link"
+                [ngClass]="{
+                    'active': selectedSkill === 'html'
+                }"
+                >HTML 5</a>
+            </li>
+            <li class="nav-item"
+            (click)="selectedSkill = 'css'"
+            >
+                <a href="javascript:;" class="nav-link"
+                [ngClass]="{
+                    'active': selectedSkill === 'css'
+                }"
+                >CSS 3</a>
+            </li>
+            <li class="nav-item"
+            (click)="selectedSkill = 'javascript'"
+            >
+                <a href="javascript:;" class="nav-link"
+                [ngClass]="{
+                    'active': selectedSkill === 'javascript'
+                }"
+                >JavaScript</a>
+            </li>
+            <li class="nav-item"
+            (click)="selectedSkill = 'angular'"
+            >
+                <a href="javascript:;" class="nav-link"
+                [ngClass]="{
+                    'active': selectedSkill === 'angular'
+                }"
+                >Angular 14</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6 offset-md-3 mt-4">
+        <div class="card"
+        *ngIf="selectedSkill === 'html'"
+        >
+            <div class="card-body">
+                <p>
+                    <strong>HTML 5</strong>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, illum voluptate. Praesentium suscipit, adipisci pariatur fugiat error, perferendis beatae temporibus, deleniti qui consequuntur quae laboriosam itaque nobis corporis vero aliquam.
+                </p>
+            </div>
+        </div>
+        <div class="card"
+        *ngIf="selectedSkill === 'css'"
+        >
+            <div class="card-body">
+                <p>
+                    <strong>CSS 3</strong>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, illum voluptate. Praesentium suscipit, adipisci pariatur fugiat error, perferendis beatae temporibus, deleniti qui consequuntur quae laboriosam itaque nobis corporis vero aliquam.
+                </p>
+            </div>
+        </div>
+        <div class="card"
+        *ngIf="selectedSkill === 'javascript'"
+        >
+            <div class="card-body">
+                <p>
+                    <strong>JavaScript</strong>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, illum voluptate. Praesentium suscipit, adipisci pariatur fugiat error, perferendis beatae temporibus, deleniti qui consequuntur quae laboriosam itaque nobis corporis vero aliquam.
+                </p>
+            </div>
+        </div>
+        <div class="card"
+        *ngIf="selectedSkill === 'angular'"
+        >
+            <div class="card-body">
+                <p>
+                    <strong>Angular 14</strong>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, illum voluptate. Praesentium suscipit, adipisci pariatur fugiat error, perferendis beatae temporibus, deleniti qui consequuntur quae laboriosam itaque nobis corporis vero aliquam.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
